@@ -57,6 +57,8 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '651434803533655');
   fbq('track', 'PageView');
+  fbq('track', 'Contact');
+
   </script>
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=651434803533655&ev=PageView&noscript=1"
@@ -75,10 +77,16 @@
           <h2 data-aos="fade-up" data-aos-delay="200">Dapatkan di Sakka Sport</h2>
           <div data-aos="fade-up" data-aos-delay="300">
             <div class="text-center text-lg-start">
-              <a href="https://api.whatsapp.com/send/?phone=6289665994560&text&type=phone_number&app_absent=0" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <button id="Contact"
+                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center"
+                onclick="window.location.href='https://api.whatsapp.com/send/?phone=6289665994560&text&type=phone_number&app_absent=0'">
                 <span>Pesan Sekarang</span>
                 <i class="bi bi-bag-plus"></i>
-              </a>
+              </button>
+              <script>
+                $ ( '#Contact' ). click ( function () { 
+                  fbq ( 'track' , 'Contact'); });
+              </script>
             </div>
           </div>
         </div>
@@ -332,10 +340,16 @@
 
       <div data-aos="fade-up" data-aos-delay="300">
         <div class="text-center text-lg-start">
-          <a href="https://api.whatsapp.com/send/?phone=6289665994560&text&type=phone_number&app_absent=0" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+          <button id="Contact"
+            class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center"
+            onclick="window.location.href='https://api.whatsapp.com/send/?phone=6289665994560&text&type=phone_number&app_absent=0'">
             <span>Pesan Sekarang</span>
             <i class="bi bi-bag-plus"></i>
-          </a>
+          </button>
+          <script>
+            $ ( '#Contact' ). click ( function () { 
+              fbq ( 'track' , 'Contact'); });
+          </script>
         </div>
       </div>
     </div>
